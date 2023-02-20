@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #card-front{
+    background-color: #e5e5f7;
+opacity: 0.8;
+background: linear-gradient(135deg, #00000055 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #000000 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #00000055 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #000000 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
+    background-size: cover;
+    margin-top: 50px;
+    width: 6cm;
+    height: 6cm;
+    border: 2px solid black;
+    background-color: black;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #left{
+    
+  }
+  #left img{
+    width: 4cm ;
+    height: 4cm;
+    pointer-events: none;
+  }
+  #info{
+    width:2cm ;
+    height: 2cm;
+
+    right: 0.5cm;
+    top: 0.5cm;
+  }
+  #facebook{
+    width: 6cm;
+    height: 3cm;
+
+    left: 0.5cm;
+    top: 3.5cm;
+  }
+
+  #tył{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    width: 6cm;
+    height: 6cm;
+    
+
+  }
+  #container{
+    background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(30deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(150deg, #000000 12%, transparent 12.5%, transparent 87%, #000000 87.5%, #000000), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077), linear-gradient(60deg, #00000077 25%, transparent 25.5%, transparent 75%, #00000077 75%, #00000077);
+background-size: 80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    width: 6cm;
+    height: 6cm;
+    border: #000000 solid 2px;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 10% 80% 10%;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #info2{
+    background: #e5e5f7;
+    border: 3px solid black;
+    grid-area: 2/2/2/2;
+  }
+  #info h2{
+    font-size: 20px;
+    color: #000000;
+  }
+  #info2 h4{
+    font-size: 20px;
+    color: #000000;
+  }
