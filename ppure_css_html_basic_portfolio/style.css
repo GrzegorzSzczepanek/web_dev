@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: 'Space Mono', monospace;
+  }
+  #navbar{
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      width: 100%;
+      background-color: thistle;
+      color: rgb(12, 10, 10);
+      font-size: 25px;
+      -webkit-box-shadow: 0px 5px 12px -3px rgba(0, 0, 0, 1);
+-moz-box-shadow: 0px 5px 12px -3px rgba(0, 0, 0, 1);
+box-shadow: 0px 5px 12px -3px rgba(0, 0, 0, 1);
+  }
+  #navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  #navbar ul a{
+      display: block;
+      color: black;
+      text-decoration: none;
+      padding: 15px;
+      transition:all 0.2s linear;
+  }
+  #navbar ul a:hover{
+    background-color: rgb(100, 145, 230);
+    
+}
+  #main{
+    display: flex;
+    flex-direction: column;
+  }
+  #welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(35deg,rgb(113, 75, 128),rgb(104, 71, 163));
+    text-align: center;
+}
+#welcome-section h1{
+  font-size: 4em;
+  font-weight: bold;
+  
+}
+#welcome-section h5{
+  font-size: 1.5em;
+  color: thistle;
+}
+#projects{
+    background-color: rgb(102, 149, 168);
+    display: grid;
+    
+}
+#project-section-header{
+  text-align: center;
+  font-size:1.5em ;
+  margin: 80px;
+  margin-bottom: 30px;
+  border-bottom: black solid 3px;
+}
+
+#projects-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between; 
+  
+}
+.project-tile{
+  width: 25%;
+  aspect-ratio: 1;
+  background-color: black;
+  margin: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+.project-tile a{
+  font-size: 1.2em;
+  padding-top: 3%;
+    padding-bottom: 3%;
+  width: 100%;
+  background-color: rgb(110, 60, 158);
+  color:whitesmoke;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+  text-decoration: none;
+  transition:backround-color ease-in-out 0.4s;
+}
+.project-tile a:hover{
+
+
+}
+.arrow{
+  transition: all 0.3s ease-out;
+  color:rgb(110, 60, 158);
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 26px;
+}
+.project-tile:hover .arrow { transition: all 0.3s ease-out;
+  color:rgb(102, 149, 168); }
+  
+
+
+#div-link{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+#profile-link{
+  padding: 15px 25px 15px 25px;
+  font-size: 20px;
+  background-color: rgb(110, 60, 158);
+  color:whitesmoke;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+  text-decoration: none;
+  transition:all 0.5s linear;
+  
+}
+.arrow-right{
+  transition: all linear 0.3s;
+}
+.arrow-left{
+transition:all linear 0.3s;
+}
+#div-link:hover .arrow-right{
+  transition:all linear 0.3s;
+  margin-left: 5px;
+}
+#div-link:hover .arrow-left{
+  transition:all linear 0.3s;
+  margin-right: 5px;
+  letter-spacing: 1px;
+}
+#profile-link::after{
+  transition: all .5s;
+}
+#profile-link::after:hover{
+  margin-left: 5px;
+  content: ">";
+}
+#profile-link:hover{
+  background-color: rgb(155, 114, 155);
+ 
+}
+
+.project-tile img{
+  width: 100%;
+  overflow: hidden;
+}
+
+#contacts{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(69, 51, 92);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+#div-contacts{
+  margin-top: 130px;
+}
+#contacts-header h1{
+  font-size: 4em;
+  font-weight: bold;
+}
+#contacts-header h5{
+  font-size: 1em;
+}
+#contact-icons{
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.5em;
+  
+}
+#contact-icons i{
+  margin: 15px;
+  color: whitesmoke;
+  transition:  0.5s ease-out;
+}
+#contact-icons a,i{
+  color:whitesmoke;
+  text-decoration: none;
+  transition:  0.5s ease-out;
+  margin: 10px;
+}
+#contact-icons a:hover{
+  transform:translateY(0.7em);
+ 
+}
+#contact-icons i:hover{
+  color: whitesmoke;
+}
+
+footer{
+  background-color: rgb(69, 51, 92);
+  text-align: center;
+  border-top: solid 4px rgb(107, 90, 207);
+  width: 100%;
+  font-size: 1.5em;
+  padding:1em 0 1em 0;
+}
+
+
+@media (max-width:1190px){
+  .project-tile{
+    width: 40%;
+  }
+  
+}
+@media (max-width:800px){
+  .project-tile{
+    width: 80%;
+    aspect-ratio: 1.1;
+  }
+  .project-tile a{
+    }
+  #contacts-header h1{font-size:3em}
+}
