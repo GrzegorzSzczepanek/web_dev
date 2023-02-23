@@ -1,0 +1,39 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100vh;
+}
+
+h2{
+    font-size: 60px;
+    background-color: #eee;
+    padding: 10px 5px;
+    border-radius: 16px;
+}
+
+div:nth-child(1){
+    background-image: url("wieża.jpg");
+    background-size: cover;
+}
+div:nth-child(2){
+    background:#F00;
+
+    background-size: cover;
+}
+div:nth-child(3){
+    background-image: url("las.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+div:nth-child(4){
+    background-color: #000;
+}
